@@ -1,11 +1,11 @@
-from SACHIN_MUSIC import app
+from SONALI import app
 from pyrogram.errors import RPCError, UserAlreadyParticipant, ChatAdminRequired, InviteRequestSent, UserNotParticipant
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton, Message, ChatJoinRequest
 from pyrogram import Client, filters, enums
 from pyrogram.enums import ParseMode, ChatMemberStatus
 from logging import getLogger
-from SACHIN_MUSIC.utils.database import add_served_chat, get_assistant, is_active_chat
-from SACHIN_MUSIC.misc import SUDOERS
+from SONALI.utils.database import add_served_chat, get_assistant, is_active_chat
+from SONALI.misc import SUDOERS
 import asyncio
 import random
 import os
@@ -99,7 +99,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
         
         # Creating an inline button to "Join 👋" with the link
         keyboard = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Join 👋", url="https://t.me/CRAZY_OP_02")]]
+            [[InlineKeyboardButton("Join 👋", url="https://t.me/oldskoolgc")]]
         )
 
         # Send the welcome message with the inline button
