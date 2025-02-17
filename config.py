@@ -55,7 +55,7 @@ SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/iamvillain77")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/oldskoolgc")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", "true"))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -90,7 +90,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/fcawaj.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/qk2t0t.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://files.catbox.moe/fcawaj.jpg"
