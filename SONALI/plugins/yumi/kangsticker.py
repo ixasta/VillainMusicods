@@ -13,17 +13,17 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from SONALI_MUSIC import app
+from SONALI import app
 from config import BOT_USERNAME
-from SONALI_MUSIC.utils.errors import capture_err
+from SONALI.utils.errors import capture_err
 
-from SONALI_MUSIC.utils.files import (
+from SONALI.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
 )
 
-from SONALI_MUSIC.utils.stickerset import (
+from SONALI.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,
@@ -144,7 +144,7 @@ async def kang(client, message: Message):
                 stickerset = await create_sticker_set(
                     client,
                     message.from_user.id,
-                    f"{message.from_user.first_name[:32]}'s ᴘᴀᴄᴋ ʙʏ @Sonali_Music_bot",
+                    f"{message.from_user.first_name[:32]}'s ᴘᴀᴄᴋ ʙʏ @radha_music_bot",
                     packname,
                     [sticker],
                 )
